@@ -1,0 +1,208 @@
+html,
+body {
+	height: 100%;
+	font-family: sans-serif;
+}
+
+.main-container {
+	height: 94%;
+	/* border: 5px solid; */
+	padding: 20px
+}
+
+.flex-column-center-container {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-between;
+}
+
+.flex-column-center-container>div {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.info-container,
+.confirmation-container {
+	height: 100%;
+}
+
+.information-icon {
+	position: absolute;
+	right: 25px;
+	top: 25px;
+}
+
+.info-text-top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.info-text-top h3 {
+	margin: 5px;
+}
+
+
+.info-text-center {
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.info-text-center h1 {
+	margin: 5px;
+}
+
+.info-text-bottom {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+
+/* Confirmation Container */
+
+.conf-text {
+	height: 70%;
+}
+
+.return-info {
+	text-align: left;
+	height: 30%;
+	border-top: 2px solid;
+	align-items: flex-start!important;
+}
+
+.tracking-id-section {
+	height: 10%;
+	align-items: flex-start!important;
+}
+
+.item-description-section {
+	height: 70%;
+	text-align: left!important;
+	align-items: flex-start!important;
+}
+
+.btn {
+	border: 1px solid;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 8px;
+}
+
+.print-coupon-confirmation-btn {
+	background-color: #000000;
+	/* Black */
+	color: white;
+	margin: 15% 0;
+}
+
+
+/* ARROW */
+
+.arrow {
+	position: absolute;
+	width: 28px;
+	height: 8px;
+	opacity: 0;
+	transform: scale3d(0.5, 0.5, 0.5);
+	animation: move 3s ease-out infinite;
+}
+
+.arrow:first-child {
+	animation: move 3s ease-out 1s infinite;
+}
+
+.arrow:nth-child(2) {
+	animation: move 3s ease-out 2s infinite;
+}
+
+.arrow:before,
+.arrow:after {
+	content: ' ';
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 51%;
+	background: #f00;
+}
+
+.arrow:before {
+	left: 0;
+	transform: skew(0deg, 30deg);
+}
+
+.arrow:after {
+	right: 0;
+	width: 50%;
+	transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+	25% {
+		opacity: 1;
+	}
+	33% {
+		opacity: 1;
+		transform: translateY(30px);
+	}
+	67% {
+		opacity: 1;
+		transform: translateY(40px);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+	}
+}
+
+@keyframes pulse {
+	to {
+		opacity: 1;
+	}
+}
+
+.downArrow {
+	clear: left;
+	left: 48%;
+	width: 24px;
+	height: 7px;
+	position: fixed;
+	bottom: 15%;
+}
+
+.text {
+	display: block;
+	margin-top: -20px;
+	margin-left: -40px;
+	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #f00;
+	white-space: nowrap;
+	opacity: .25;
+	animation: pulse 2s linear alternate infinite;
+}
+.loader-parent-div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url('../assets/images/Scan_overlay.png');
+    z-index: 999;
+}
+.loader-child-div{
+    margin: auto;
+    margin-top: 200px;
+}
