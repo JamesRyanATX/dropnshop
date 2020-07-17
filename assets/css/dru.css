@@ -1,0 +1,11 @@
+
+.main img {
+    width:375px !important;
+    height:auto;
+}
+
+
+/*goodbye spacing*/
+
+body, .main-container {margin:0px;padding:0px;}
+
