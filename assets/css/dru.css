@@ -9,8 +9,13 @@
 
 body, .main-container {margin:0px;padding:0px;}
 
-.info-text-top h1 {
+/*.info-text-top h1 {
 	font-size: 1.2em;
     font-weight: normal;
     padding-top: 2em;
+    padding-bottom: 0px;
+}*/
+/*.info-text-center input {
+	width:200px;
 }
+*/
