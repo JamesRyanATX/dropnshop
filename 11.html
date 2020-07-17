@@ -9,44 +9,9 @@
 </head>
 
 <body>
-    <!-- <div class="main-container">                
-        <img src="./assets/images/Instore_1.png" width="100%" height="auto" onclick="location.href='12.html'"/>
-    </div> -->
-    <div id="reader" width="600px"></div>
-    <script src="./assets/js/html5-qrcode.min.js"></script>
-    <script type="text/javascript">
-    function onScanSuccess(qrMessage) {
-	// handle the scanned code as you like
-	console.log(`QR matched = ${qrMessage}`);
-}
-
-function onScanFailure(error) {
-	// handle scan failure, usually better to ignore and keep scanning
-	console.warn(`QR error = ${error}`);
-}
-
-let html5QrcodeScanner = new Html5QrcodeScanner(
-	"reader", { fps: 10, qrbox: 250 }, /* verbose= */ true);
-html5QrcodeScanner.render(onScanSuccess, onScanFailure);
-    </script>
-
-    <!-- <video id="preview"></video>
-    <script src="./assets/js/instascan.min.js"></script>
-    <script type="text/javascript">
-      let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
-      scanner.addListener('scan', function (content) {
-        console.log(content);
-      });
-      Instascan.Camera.getCameras().then(function (cameras) {
-        if (cameras.length > 0) {
-          scanner.start(cameras[0]);
-        } else {
-          console.error('No cameras found.');
-        }
-      }).catch(function (e) {
-        console.error(e);
-      });
-    </script> -->
+    <div class="main-container">
+      <img src="./assets/images/6-Instore_1.jpg" width="100%" height="auto" onclick="location.href='12.html'"/>
+    </div>
     <script src="./assets/lib/js/jquery-3.2.1.min.js"></script>    
     <script src="./assets/js/common.js"></script>    
     <script src="./assets/js/helpers/print-helper.js" charset="UTF-8"></script>
