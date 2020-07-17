@@ -572,3 +572,8 @@ ul.list li{
 .itemDisplay{
     text-align: left;
 }
+
+.main img {
+    width:414px;
+    height:auto;
+}
